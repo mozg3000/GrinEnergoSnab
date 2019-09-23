@@ -1,9 +1,52 @@
 html, body
   height: 100%
   margin: 0
+
 .wrapper
   min-height: 100%
   display: flex
   flex-direction: column
+  width: 1920px
 .top
   flex-grow: 1
+  .header
+    display: flex
+    background-color: #FFFFFF
+    height: 198px
+    .header-top-left
+      width: 50%
+      display: flex
+      .header-top-left-logo
+        width: 33%
+        padding: 20px 0 25px 22px
+      .header-top-left-phone-container
+        height: 198px
+        width: 30%
+        .header-top-left-phone-container__phone-icon
+          font-style: normal
+          font-weight: 900
+          font-size: 20px
+          line-height: 150%
+          color: #7CA92D
+          margin-top: 73px
+        .header-top-left-phone-container__phone-number
+          font-family: Roboto
+          font-style: normal
+          font-weight: bold
+          font-size: 20px
+          line-height: 150%
+          color: #1A1A1A
+          margin-left: 9px
+        .header-top-left-phone-container__phone-text
+          display: block
+          font-family: Roboto
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 150%
+          color: #0095cc
+          margin-left: 95px
+  .content
+    background-color: #E5E5E5
+    width: 100%
+    height: 300px
