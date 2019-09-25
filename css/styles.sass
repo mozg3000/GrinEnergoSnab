@@ -1,36 +1,53 @@
 html, body
   height: 100%
   margin: 0
+  font-family: Roboto
+  color: #58595B
+  font-style: normal
+  font-weight: normal
+  box-sizing: border-box
+a
+  text-decoration: none
+  color: #58595B
+p
+  margin: 0
 
 .wrapper
   min-height: 100%
   display: flex
   flex-direction: column
   width: 1920px
+
+  margin: 0 auto
 .top
   flex-grow: 1
   .header
     display: flex
     background-color: #FFFFFF
-    height: 198px
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 150%
+    height: 150px
     .header-top-left
       width: 50%
       display: flex
+      justify-content: space-between
+      padding: 20px 25px 25px 22px
       .header-top-left-logo
-        width: 33%
-        padding: 20px 0 25px 22px
-      .header-top-left-phone-container
-        height: 198px
-        width: 30%
+        //width: 272px
+        //padding: 20px 0 25px 22px
+      .header-top-left-phone-container, .header-top-left-address-container
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: flex-end
+        .header-phone
+          display: flex
+          align-items: center
         .header-top-left-phone-container__phone-icon
-          font-style: normal
-          font-weight: 900
-          font-size: 20px
-          line-height: 150%
-          color: #7CA92D
-          margin-top: 73px
+        //margin-top: 73px
         .header-top-left-phone-container__phone-number
-          font-family: Roboto
           font-style: normal
           font-weight: bold
           font-size: 20px
@@ -39,13 +56,138 @@ html, body
           margin-left: 9px
         .header-top-left-phone-container__phone-text
           display: block
-          font-family: Roboto
           font-style: normal
           font-weight: normal
           font-size: 14px
           line-height: 150%
           color: #0095cc
-          margin-left: 95px
+          //margin-left: 95px
+      .header-top-left-address-container
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 150%
+        color: #58595B
+        align-items: flex-start
+        .header-address
+          display: flex
+          align-items: center
+        .header-email
+          display: flex
+          align-items: center
+        .header-map-marker
+          //margin-top: 67px
+        .header-address-text
+
+          margin-left: 13px
+        .header-email-container
+          .header__email-icon
+            font-style: normal
+            font-weight: 900
+            font-size: 20px
+            line-height: 150%
+            color: #7CA92D
+          .header__email
+            margin-left: 10px
+    .header-top-right
+      width: 50%
+      display: flex
+      justify-content: space-around
+      align-items: flex-end
+      padding: 20px 49px 25px 10px
+      .search-box
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-right: 15px
+        margin-left: 10px
+        width: 600px
+        height: 48px
+        margin-top: 74px
+        border: 1px solid #D9D9D9
+        box-sizing: border-box
+        border-radius: 2px
+        .search-box-left
+          display: flex
+          align-items: center
+        .search-box-right
+
+        .search-icon
+          //margin-top: 12px
+          margin-left: 18px
+          margin-right: 12px
+        .search-box-caret
+          margin-left: 5px
+      .search-box-categories
+        font-size: 14px
+        line-height: 150%
+        color: #BDBDBD
+        //margin-left: 240px
+        //margin-right: 15px
+      .search-box-category-caret
+        margin-left: 5px
+    .cart-container
+      //padding-left: 40px
+      //padding-top: 20px
+      //padding-right: 49px
+      //width: 340px
+      .sign-in-link
+        border-bottom: 1px dashed #58595B
+      .sign-up-link
+        border-bottom: 1px dashed #58595B
+        margin-left: 16px
+      .header-cart-container
+        display: flex
+        width: 100%
+        padding-top: 33px
+        text-align: center
+        //line-height: 48px
+        .header-cart-link
+          background-color: #7CA92D
+          border-radius: 2px
+          align-items: center
+          display: flex
+          padding: 11px 14px
+      .cart-description
+        padding-left: 11px
+        p:first-child
+          margin-left: -26px
+        .cart-description__price, .cart-description__pieces
+          color: #000
+          font-weight: bold
+  .menu-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 12px 20px
+    .menu-left
+      display: flex
+      align-items: center
+      .menu-left-text
+        color: #1A1A1A
+        font-weight: bold
+        text-transform: uppercase
+        margin-left: 13px
+    .menu-right
+      display: flex
+      align-items: center
+      .menu-right-favorites
+        margin-right: 32px
+        .favorites-text
+          margin-left: 14px
+          margin-right: 10px
+        .favorites-quantity
+          color: #000
+          font-weight: 500
+      .menu-right-compare
+        .compare-text
+          margin-left: 10px
+          margin-right: 10px
+        .compare-quantity
+          color: #000
+          font-weight: 500
+
+
   .content
     background-color: #E5E5E5
     width: 100%

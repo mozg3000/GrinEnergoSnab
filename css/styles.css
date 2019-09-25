@@ -1,6 +1,20 @@
 html, body {
   height: 100%;
   margin: 0;
+  font-family: Roboto;
+  color: #58595B;
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #58595B;
+}
+
+p {
+  margin: 0;
 }
 
 .wrapper {
@@ -8,6 +22,7 @@ html, body {
   display: flex;
   flex-direction: column;
   width: 1920px;
+  margin: 0 auto;
 }
 
 .top {
@@ -16,30 +31,29 @@ html, body {
 .top .header {
   display: flex;
   background-color: #FFFFFF;
-  height: 198px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  height: 150px;
 }
 .top .header .header-top-left {
   width: 50%;
   display: flex;
+  justify-content: space-between;
+  padding: 20px 25px 25px 22px;
 }
-.top .header .header-top-left .header-top-left-logo {
-  width: 33%;
-  padding: 20px 0 25px 22px;
+.top .header .header-top-left .header-top-left-phone-container, .top .header .header-top-left .header-top-left-address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.top .header .header-top-left .header-top-left-phone-container {
-  height: 198px;
-  width: 30%;
+.top .header .header-top-left .header-top-left-phone-container .header-phone, .top .header .header-top-left .header-top-left-address-container .header-phone {
+  display: flex;
+  align-items: center;
 }
-.top .header .header-top-left .header-top-left-phone-container .header-top-left-phone-container__phone-icon {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 150%;
-  color: #7CA92D;
-  margin-top: 73px;
-}
-.top .header .header-top-left .header-top-left-phone-container .header-top-left-phone-container__phone-number {
-  font-family: Roboto;
+.top .header .header-top-left .header-top-left-phone-container .header-top-left-phone-container__phone-number, .top .header .header-top-left .header-top-left-address-container .header-top-left-phone-container__phone-number {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -47,15 +61,150 @@ html, body {
   color: #1A1A1A;
   margin-left: 9px;
 }
-.top .header .header-top-left .header-top-left-phone-container .header-top-left-phone-container__phone-text {
+.top .header .header-top-left .header-top-left-phone-container .header-top-left-phone-container__phone-text, .top .header .header-top-left .header-top-left-address-container .header-top-left-phone-container__phone-text {
   display: block;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 150%;
   color: #0095cc;
-  margin-left: 95px;
+}
+.top .header .header-top-left .header-top-left-address-container {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #58595B;
+  align-items: flex-start;
+}
+.top .header .header-top-left .header-top-left-address-container .header-address {
+  display: flex;
+  align-items: center;
+}
+.top .header .header-top-left .header-top-left-address-container .header-email {
+  display: flex;
+  align-items: center;
+}
+.top .header .header-top-left .header-top-left-address-container .header-address-text {
+  margin-left: 13px;
+}
+.top .header .header-top-left .header-top-left-address-container .header-email-container .header__email-icon {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 150%;
+  color: #7CA92D;
+}
+.top .header .header-top-left .header-top-left-address-container .header-email-container .header__email {
+  margin-left: 10px;
+}
+.top .header .header-top-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 20px 49px 25px 10px;
+}
+.top .header .header-top-right .search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+  margin-left: 10px;
+  width: 600px;
+  height: 48px;
+  margin-top: 74px;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.top .header .header-top-right .search-box .search-box-left {
+  display: flex;
+  align-items: center;
+}
+.top .header .header-top-right .search-box .search-icon {
+  margin-left: 18px;
+  margin-right: 12px;
+}
+.top .header .header-top-right .search-box .search-box-caret {
+  margin-left: 5px;
+}
+.top .header .header-top-right .search-box-categories {
+  font-size: 14px;
+  line-height: 150%;
+  color: #BDBDBD;
+}
+.top .header .header-top-right .search-box-category-caret {
+  margin-left: 5px;
+}
+.top .header .cart-container .sign-in-link {
+  border-bottom: 1px dashed #58595B;
+}
+.top .header .cart-container .sign-up-link {
+  border-bottom: 1px dashed #58595B;
+  margin-left: 16px;
+}
+.top .header .cart-container .header-cart-container {
+  display: flex;
+  width: 100%;
+  padding-top: 33px;
+  text-align: center;
+}
+.top .header .cart-container .header-cart-container .header-cart-link {
+  background-color: #7CA92D;
+  border-radius: 2px;
+  align-items: center;
+  display: flex;
+  padding: 11px 14px;
+}
+.top .header .cart-container .cart-description {
+  padding-left: 11px;
+}
+.top .header .cart-container .cart-description p:first-child {
+  margin-left: -26px;
+}
+.top .header .cart-container .cart-description .cart-description__price, .top .header .cart-container .cart-description .cart-description__pieces {
+  color: #000;
+  font-weight: bold;
+}
+.top .menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+.top .menu-container .menu-left {
+  display: flex;
+  align-items: center;
+}
+.top .menu-container .menu-left .menu-left-text {
+  color: #1A1A1A;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 13px;
+}
+.top .menu-container .menu-right {
+  display: flex;
+  align-items: center;
+}
+.top .menu-container .menu-right .menu-right-favorites {
+  margin-right: 32px;
+}
+.top .menu-container .menu-right .menu-right-favorites .favorites-text {
+  margin-left: 14px;
+  margin-right: 10px;
+}
+.top .menu-container .menu-right .menu-right-favorites .favorites-quantity {
+  color: #000;
+  font-weight: 500;
+}
+.top .menu-container .menu-right .menu-right-compare .compare-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.top .menu-container .menu-right .menu-right-compare .compare-quantity {
+  color: #000;
+  font-weight: 500;
 }
 .top .content {
   background-color: #E5E5E5;
