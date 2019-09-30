@@ -13,8 +13,9 @@ a {
   color: #58595B;
 }
 
-p {
+p, ul {
   margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -268,6 +269,51 @@ p {
 }
 .footer-top .footer-left-container .footer-flex .footer-email, .footer-top .footer-left-container .footer-flex .footer-phone {
   margin-left: 10px;
+}
+.footer-top .footer-right-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 80px;
+  width: 50%;
+}
+.footer-top .footer-right-container .footer-detials {
+  width: 277px;
+  color: #1A1A1A;
+}
+.footer-top .footer-right-container .footer-menu {
+  list-style: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+}
+.footer-top .footer-right-container .footer-menu .footer-menu-link {
+  display: block;
+  padding: 10px 17px;
+  color: #1A1A1A;
+}
+.footer-top .footer-right-container .footer-menu .footer-menu-link:hover {
+  color: #7CA92D;
+}
+.footer-top .footer-right-container .footer-products {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.footer-top .footer-right-container .footer-products-link {
+  color: #1A1A1A;
+}
+
+.footer-menu-link-first {
+  padding: 10px 17px;
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
