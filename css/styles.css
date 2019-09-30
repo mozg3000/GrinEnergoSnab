@@ -316,4 +316,29 @@ p, ul {
   padding-top: 0;
 }
 
+.footer-bottom {
+  height: 44px;
+  background-color: #96C764;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-bottom-copyright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.footer-bottom-map {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=styles.css.map */
